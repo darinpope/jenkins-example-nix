@@ -20,9 +20,4 @@ pipeline {
       }
     }
   }
-  post {
-    always {
-      sh 'nix-store --gc'
-    }
-  }
 }
